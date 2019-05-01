@@ -1,0 +1,25 @@
+{
+  "name": "hex-permutation-cipher",
+  "description": "permutation cipher for encrypting and decrypting a hexadecimal string",
+  "main": "index.js",
+  "authors": [
+    "ben eaves"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "permutation-cipher",
+    "permutation",
+    "permutation-algorithms",
+    "cipher",
+    "encrypt",
+    "decrypt",
+    "hex",
+    "hexadecimal"
+  ],
+  "homepage": "https://github.com/angeal185/hex-permutation-cipher",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
