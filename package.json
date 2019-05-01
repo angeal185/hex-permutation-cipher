@@ -1,0 +1,25 @@
+{
+  "name": "hex-permutation-cipher",
+  "version": "1.0.0",
+  "description": "permutation cipher for encrypting and decrypting a hexadecimal string",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeal185/hex-permutation-cipher.git"
+  },
+  "keywords": [],
+  "author": "ben eaves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angeal185/hex-permutation-cipher/issues"
+  },
+  "homepage": "https://github.com/angeal185/hex-permutation-cipher#readme"
+}
