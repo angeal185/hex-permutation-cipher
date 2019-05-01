@@ -8,23 +8,23 @@ function test(testStr, iterations, conf){
     if(err){return console.log(err)}
     $('#callbackenc').val(i.data)
 
-    per.dec(i.data, i.iterations, conf, function(err,res){
+    per.dec(i.data, i.key, i.iterations, conf, function(err,res){
       if(err){return console.log(err)}
       $('#callbackdec').val(res.data)
     })
   })
 
   //sync
-  let encSync = per.encSync(testStr, iterations, conf),
-  decSync = per.decSync(encSync.data, encSync.iterations, conf);
+  let encSync = per.encSync(testStr, iterations, conf);
   $('#syncenc').val(encSync.data)
+  let decSync = per.decSync(encSync.data, encSync.key, encSync.iterations, conf);
   $('#syncdec').val(decSync.data)
 
   // promise
   per.encP(testStr, iterations, conf).then(function(res) {
     $('#promiseenc').val(res.data);
 
-    per.decP(res.data, res.iterations, conf).then(function(res) {
+    per.decP(res.data, res.key, res.iterations, conf).then(function(res) {
       $('#promisedec').val(res.data);
     }).catch(function(err){
       console.log(err)
@@ -38,7 +38,7 @@ function test(testStr, iterations, conf){
 function str2hex(str) {
 	let hex = '';
 	for(var i=0;i<str.length;i++) {
-		hex += '' + str.charCodeAt(i).toString(16);
+		hex += '' + str.charCodeAt(i).toString(16).toUpperCase();
 	}
 	return hex;
 }
@@ -56,11 +56,11 @@ $('body').append(
   div.clone().addClass('container').append(
     $('<h2 />', {
       class:'mt-4 mb-4',
-      text:'hex-xor'
+      text:'hex-permutation-cipher'
     }),
     div.clone().addClass('row demo').append(
       inputTpl({title: 'config', ID:'config'}),
-      inputTpl({title: 'shift', ID:'iteration'})
+      inputTpl({title: 'iterations', ID:'iteration'})
     )
   )
 )
