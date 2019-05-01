@@ -15,7 +15,15 @@
     "type": "git",
     "url": "git+https://github.com/angeal185/hex-permutation-cipher.git"
   },
-  "keywords": [],
+  "keywords": ["permutation-cipher",
+    "permutation",
+    "permutation-algorithms",
+    "cipher",
+    "encrypt",
+    "decrypt",
+    "hex",
+    "hexadecimal"
+  ],
   "author": "ben eaves",
   "license": "MIT",
   "bugs": {
