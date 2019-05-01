@@ -16,7 +16,7 @@ $ npm install hex-permutation-cipher --save
 bower
 
 ```sh
-$ bower install hex-permutation-cipher --save
+$ bower install hex-permutation-cipher
 ```
 
 git
