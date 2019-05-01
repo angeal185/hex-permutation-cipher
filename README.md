@@ -3,8 +3,9 @@ permutation cipher for encrypting and decrypting a hexadecimal string
 
 Adds an extra layer of protection to your already encrypted code's hex output by essentially turning it into nothing but valid hex.
 
-Installation
 demo: https://angeal185.github.io/hex-permutation-cipher/
+
+### Installation
 
 npm
 
